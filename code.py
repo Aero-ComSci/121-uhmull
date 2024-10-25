@@ -1,14 +1,14 @@
-# a121_catch_a_turtle.py
+# code.py
 #-----import statements-----
 import turtle as trtl
 import random
 
 #-----game configuration----
 spot_color = "pink"
-spot_size = 2
+spot_size = int("3")
 spot_shape = "circle"
 totalScore = 0
-font_setup = ("MonoLisa", 20, "Arial")
+font_setup = ("MonoLisa", 20)
 timer = 30
 counter_interval = 1000  
 timer_up = False
@@ -17,7 +17,7 @@ sizes = [0.5, 1, 1.5, 1.75, 2, 2.25]
 
 #-----initialize turtle-----
 wn = trtl.Screen()
-wn.setup(width=500, height=500)
+wn.setup(width=300, height=300)
 spot = trtl.Turtle()
 spot.shape(spot_shape)
 spot.shapesize(spot_size)
@@ -38,11 +38,11 @@ def countdown():
         timer -= 1
         counter.getscreen().ontimer(countdown, counter_interval)
 def update_score():
-    global totalScore
+    global score  # Declare score as global
     score += 1
     score_writer.clear()
     score_writer.hideturtle()
-    score_writer.write(totalScore, font=font_setup) 
+    score_writer.write(score, font=font_setup)
 def change_position():
     new_xpos = random.randint(-200, 200)
     new_ypos = random.randint(-150, 150)
@@ -50,7 +50,7 @@ def change_position():
     update_score()
 def spot_clicked(x, y):
     global timer_up
-    if not timer_up:  #to check if ur still playing or not
+    if not timer_up:  # to check if you are still playing or not
         spot.penup()
         spot.hideturtle()
         change_position()
@@ -59,8 +59,8 @@ def spot_clicked(x, y):
         new_color()
         new_sizes()
 def new_color(): #to give each spot a different color
-    random_color = rand.choice(colors)
-    spot.color(random_color)s
+    random_color = random.choice(colors)
+    spot.color(random_color)
     spot.stamp()
     spot.color(spot_color)
 def new_sizes(): #to make each spot a diff size randomly
@@ -68,7 +68,7 @@ def new_sizes(): #to make each spot a diff size randomly
     spot.shapesize(newsize)
 def start_game(): 
     global timer_up, score, timer
-    score = 0
+    score = 0  # Initialize score
     timer = 30
     timer_up = False
     score_writer.clear()
