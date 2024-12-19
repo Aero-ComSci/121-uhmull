@@ -1,5 +1,4 @@
 # updating this code to work better but the assignment was finished on the deadline but I didn't get the chance to update it then due to missing majority of the lab days because of Tennis
-
 import turtle as trtl
 import random
 
@@ -17,7 +16,7 @@ sizes = [0.5, 1, 1.5, 1.75, 2, 2.25]
 
 trtl = trtl.Screen()
 trtl.setup(width=300, height=300)
-spot = trtl.Turtle()
+spot = trtl
 spot.shape(spot_shape)
 spot.shapesize(spot_size)
 spot.fillcolor(spot_color)
@@ -64,9 +63,10 @@ def new_color():
 def new_sizes(): 
     newsize = random.choice(sizes)
     spot.shapesize(newsize)
+  score = 0  
 def start_game(): 
     global timer_up, score, timer
-    score = 0  # Initialize score
+    score = 0 
     timer = 30
     timer_up = False
     score_writer.clear()
