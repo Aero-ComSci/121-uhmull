@@ -1,4 +1,3 @@
-# updating this code to work better but the assignment was finished on the deadline but I didn't get the chance to update it then due to missing majority of the lab days because of Tennis
 import turtle as trtl
 import random
 
