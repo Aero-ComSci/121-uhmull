@@ -12,6 +12,8 @@
 
 4. Choose two snapshots of code that demonstrate the algorithm(s) used to implement the additional features. Explain the code in the screenshots.
 ![image](https://github.com/user-attachments/assets/b490a5ab-3869-4e49-81cf-8c796f0f48c5)
+![image](https://github.com/user-attachments/assets/9e04ad56-8963-44d1-9aff-525d5f29f555)
+The following screenshots can show the background color being changed to purple AND the list of colors that the next spot will randomly pick from, changing colors each spot.
 
 
 
