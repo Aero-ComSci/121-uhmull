@@ -7,8 +7,13 @@
    ![image](https://github.com/user-attachments/assets/f99d7777-6fea-47e5-bf9a-fc452f835952)
 
 3. Create a video of the app working with all of the additional features. Make the video small enough to render here or upload to a video service witha aviawable link.
+[Video Link - Please note because I have a chromebook, I have to use Trinket which doesn't show the entire tutrle screen unlike VS code, which is why the tutrle isn't seen in this screen reccording but it's coded to be](https://drive.google.com/file/d/1kzXM7qsf6xBc8CPi_nq8ZXRRM6THNpij/view?usp=sharing)
+## Update: I edited the code to have the timer goto(0,0) but it's not in the video reccording because I did it after, but the timer's there
 
 4. Choose two snapshots of code that demonstrate the algorithm(s) used to implement the additional features. Explain the code in the screenshots.
+![image](https://github.com/user-attachments/assets/b490a5ab-3869-4e49-81cf-8c796f0f48c5)
+
+
 
 
 
